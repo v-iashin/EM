@@ -10,4 +10,4 @@ The 'function.py'-file in this repository contains the code of a function that w
 
 The 'examples.py'-file contains the code of two examples.
 
-Файл 'rus_em_alg.pdf' содержит текст с постановкой задачи EM-алгоритма и более расширенного описания кода алгоритма.
+Файл 'rus_em_algorithm.pdf' содержит текст с постановкой задачи EM-алгоритма и более расширенного описания кода алгоритма.
