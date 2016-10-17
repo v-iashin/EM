@@ -8,7 +8,7 @@
 # (mu2 and sigma2), how many elements correspond to each dist, and whether
 # to show routine progress
 #
-# return in the following order: mu1, sigma1, mu2, sigma2
+# return is in the following order: mu1, sigma1, mu2, sigma2
 #
 def em_alg(X, mu1_, sigma1_, mu2_, sigma2_, n1, n2, verbose=True):
     
@@ -47,18 +47,18 @@ def em_alg(X, mu1_, sigma1_, mu2_, sigma2_, n1, n2, verbose=True):
         P_2_X = [(P_X_2[i] * n2) / (P_X_1[i] * n1 + P_X_2[i] * n2) for i in range(len(P_X_2))]
         
         # M-step
-        # calc new mu and new sigma for both distributions
+        # calc new mu and new sigma using the old mu and sigma for both distributions
         sigma1 = sum([P_1_X[i] * (X[i] - mu1) ** 2 for i in range(len(X))]) / sum(P_1_X)
         sigma2 = sum([P_2_X[i] * (X[i] - mu2) ** 2 for i in range(len(X))]) / sum(P_2_X)
         
-        # taking the square root from sigmas
+        # taking the square root from sigmas 
         sigma1, sigma2 = sigma1 ** 0.5, sigma2 ** 0.5
         
         assert len(P_1_X) == len(X)
         mu1 = sum([P_1_X[i] * X[i] for i in range(len(X))]) / sum(P_1_X)
         mu2 = sum([P_2_X[i] * X[i] for i in range(len(X))]) / sum(P_2_X)
         
-        # calc delta: the previous state - the new state and pop out the prev state
+        # calc delta: the previous state - the new state and pops out the prev state
         params.append([mu1, sigma1, mu2, sigma2])
         delta = sum([abs(params[0][i] - params[1][i]) for i in range(len(params[0]))])
         params.pop(0)
