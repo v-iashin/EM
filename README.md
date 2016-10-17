@@ -1,4 +1,4 @@
-# EM-algorithm for 1-D case (Gaussians)
+# EM-algorithm for 1-D case (two Gaussians)
 
 *17/10/2016*
 
