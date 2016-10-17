@@ -2,7 +2,7 @@
 
 *17/10/2016*
 
-This is my attempt to code EM-algorithm for two 1-D Gaussian distributions on [vanilla] Python.
+This is my attempt to code the EM-algorithm for the special (1D) case for two distributions.
 
 This code was submitted as homework at my University.
 
