@@ -25,7 +25,6 @@ def em_alg(X, mu1_, sigma1_, mu2_, sigma2_, n1, n2, verbose=True):
 
     # we need params list for calculating the diff between iterations
     params = [[mu1_, sigma1_, mu2_, sigma2_]]
-    # mu_f0, mu_m0, sigma_m0, sigma_f0
     # setting up the initial values
     mu1, sigma1, mu2, sigma2 = params[0]
     i = 1
