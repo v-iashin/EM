@@ -8,12 +8,12 @@ mu2_true = 100
 sigma1_true = 7
 sigma2_true = 6
 
-# draws a set of random variable from two dist using given parameters
+# draws a set of random variables from two dist using given parameters
 random.seed(a=0)
 X1 = [random.gauss(mu=mu1_true, sigma=sigma1_true) for _ in range(5000)]
 X2 = [random.gauss(mu=mu2_true, sigma=sigma2_true) for _ in range(5000)]
 
-# round them to integers
+# rounds them to integers
 X1 = [round(X1[i]) for i in range(len(X1))]
 X2 = [round(X2[i]) for i in range(len(X2))]
 
