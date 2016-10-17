@@ -4,6 +4,6 @@ This code was submitted as homework at my University.
 
 The 'function.py'-file in this repository contains the code of a function that was written on Python.
 
-The 'example.py'-file contains the code of an example.
+The 'examples.py'-file contains the code of two examples.
 
-Файл 'rus_SVD.pdf' содержит текст с постановкой задач SVD и Метода градинтного спуска.
+Файл 'rus_SVD.pdf' содержит текст с постановкой задачи EM-алгоритма и вербального описания кода.
